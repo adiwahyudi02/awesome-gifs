@@ -1,6 +1,9 @@
 <template>
   <div :key="item.id" class="relative group cursor-pointer">
-    <GifImage :src="item.images.fixed_height_small.url" />
+    <GifImage
+      :src="item.images.fixed_height_small.url"
+      :atr="`${item?.title} giv`"
+    />
 
     <!-- overlay -->
     <div

@@ -10,12 +10,14 @@
         q: 50,
       })
     "
+    :atr="atr"
   />
 </template>
 
 <script setup lang="ts">
 type GifImagePropsType = {
   src: string;
+  atr: string;
 };
 
 defineProps<GifImagePropsType>();

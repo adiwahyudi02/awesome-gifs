@@ -22,6 +22,24 @@
 
 <script setup lang="ts">
 import type { Source } from "~/types/source";
+
+const {
+  public: { baseUrl },
+} = useRuntimeConfig();
+
+const title = "Awesome Gifs";
+const description =
+  "Explore a world of endless entertainment with our collection of awesome GIFs! From hilarious reactions to heartwarming moments, our curated selection has something for everyone. Whether you're looking to express yourself, add some flair to your messages, or simply enjoy a good laugh, our diverse range of GIFs guarantees to spark joy and keep you entertained for hours. Discover and share the perfect GIF for any occasion, and let the fun begin!";
+useServerSeoMeta({
+  ogTitle: () => "Awesome Gifs",
+  title: () => "Awesome Gifs",
+  description: () => description,
+  ogDescription: () => description,
+  ogUrl: () => baseUrl,
+  ogLocale: () => "en_US",
+  ogType: () => "website",
+});
+
 const gifsStore = useGifsStore();
 const { fetchNextPageGifs, handleSearch } = gifsStore;
 const {

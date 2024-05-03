@@ -6,6 +6,7 @@
           <GifImage
             v-if="item?.images?.fixed_height?.url"
             :src="item?.images?.fixed_height?.url"
+            :atr="`${item?.title} giv`"
           />
         </div>
         <GifUserInfo

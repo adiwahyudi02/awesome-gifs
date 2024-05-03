@@ -6,6 +6,7 @@ describe("Image", () => {
   it("renders properly", () => {
     const props = {
       src: "/_ipx/h_50&f_giv&blur_2&q_50/images/image-placeholder.gif",
+      atr: "image gif",
     };
 
     const wrapper = mount(Image, {
