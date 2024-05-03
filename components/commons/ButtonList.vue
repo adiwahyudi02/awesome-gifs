@@ -2,6 +2,7 @@
   <div class="flex flex-wrap items-center gap-2">
     <button
       v-for="(button, index) in buttons"
+      :id="selected === button.value ? 'isActive' : ''"
       :key="index"
       class="hover:bg-blue-600 hover:text-white font-bold py-2 px-4 rounded text-nowrap"
       :class="[
@@ -12,7 +13,6 @@
       @click="
         $emit('onSelected', button.value === selected ? '' : button.value)
       "
-      :id="selected === button.value ? 'isActive' : ''"
     >
       {{ button.label }}
     </button>

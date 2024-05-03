@@ -9,13 +9,13 @@
         <!-- Close button -->
         <button
           class="absolute top-0 right-0 m-4 text-white"
-          @click="$emit('onClose')"
           data-testid="exit-button"
+          @click="$emit('onClose')"
         >
           <IconClose />
         </button>
         <!-- Modal content -->
-        <slot></slot>
+        <slot />
       </div>
     </div>
   </div>
