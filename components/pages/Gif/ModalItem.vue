@@ -3,7 +3,10 @@
     <div class="w-full flex justify-center">
       <div class="flex flex-col justify-center gap-3 min-w-96">
         <div>
-          <GifImage :src="item?.images.fixed_height.url" />
+          <GifImage
+            v-if="item?.images?.fixed_height?.url"
+            :src="item?.images?.fixed_height?.url"
+          />
         </div>
         <GifUserInfo
           :avatar-src="item?.user?.avatar_url"
@@ -18,7 +21,7 @@
 import type { Source } from "~/types/source";
 
 type GifModalPropsType = {
-  item: Source;
+  item?: Source;
   isOpen: boolean;
 };
 
