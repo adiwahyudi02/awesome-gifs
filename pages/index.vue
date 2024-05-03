@@ -31,8 +31,8 @@ const title = "Awesome Gifs";
 const description =
   "Explore a world of endless entertainment with our collection of awesome GIFs! From hilarious reactions to heartwarming moments, our curated selection has something for everyone. Whether you're looking to express yourself, add some flair to your messages, or simply enjoy a good laugh, our diverse range of GIFs guarantees to spark joy and keep you entertained for hours. Discover and share the perfect GIF for any occasion, and let the fun begin!";
 useServerSeoMeta({
-  ogTitle: () => "Awesome Gifs",
-  title: () => "Awesome Gifs",
+  ogTitle: () => title,
+  title: () => title,
   description: () => description,
   ogDescription: () => description,
   ogUrl: () => baseUrl,
