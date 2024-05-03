@@ -23,4 +23,11 @@ export default defineNuxtConfig({
     // It's important that this comes last if you have overrides you wish to apply
     "~/components",
   ],
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: "en_US",
+      },
+    },
+  },
 });

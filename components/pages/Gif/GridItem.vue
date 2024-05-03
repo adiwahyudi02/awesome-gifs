@@ -2,7 +2,7 @@
   <div :key="item.id" class="relative group cursor-pointer">
     <GifImage
       :src="item.images.fixed_height_small.url"
-      :atr="`${item?.title} giv`"
+      :alt="`${item?.title} giv`"
     />
 
     <!-- overlay -->
