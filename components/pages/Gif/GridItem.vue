@@ -8,6 +8,7 @@
     <!-- overlay -->
     <div
       class="absolute inset-0 bg-transparent opacity-0 group-hover:opacity-100 group-hover:bg-opacity-50 group-hover:bg-black transition-opacity rounded-lg"
+      data-testid="overlay-item"
     >
       <div class="flex flex-col items-start justify-between h-full p-3">
         <IconForward class="text-white self-end" />

@@ -31,7 +31,7 @@ export interface Source {
   source_tld: string;
   source_post_url: string;
   is_sticker: number;
-  import_datetime: Date;
+  import_datetime: string;
   trending_datetime: string;
   images: Images;
   user?: User;
